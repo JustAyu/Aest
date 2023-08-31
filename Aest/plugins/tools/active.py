@@ -36,7 +36,8 @@ async def activevc(_, message: Message):
             except:
                 continue
     else:
-        await mystic.edit_text(f"𝗕𝗼𝘁 𝗔𝗰𝘁𝗶𝘃𝗲 𝗖𝗵𝗮𝘁𝘀 𝗜𝗻𝗳𝗼 • 🔊\n•━━━━━━━━━━━━━━━━━━•\n🎧 **ᴀᴜᴅɪᴏ** 🎧 » {len(served_chats)} Active\n•───────•\n🎥 **ᴠɪᴅᴇᴏ** 🎥 » {len(video_chats)} Active\n\n**Code Owner** > __Ayush__", quote=True)
+        text = "Avoid another statement"
+        await mystic.edit_text(f"𝗕𝗼𝘁 𝗔𝗰𝘁𝗶𝘃𝗲 𝗖𝗵𝗮𝘁𝘀 𝗜𝗻𝗳𝗼 • 🔊\n•━━━━━━━━━━━━━━━━━━•\n🎧 **ᴀᴜᴅɪᴏ** 🎧 » {len(served_chats)} Active\n•───────•\n🎥 **ᴠɪᴅᴇᴏ** 🎥 » {len(video_chats)} Active\n\n**Code Owner** > __Ayush__")
     if not text:
         await mystic.edit_text(f"» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ᴏɴ {app.mention}.")
     else:
