@@ -35,12 +35,15 @@ async def activevc(_, message: Message):
                     j += 1
             except:
                 continue
+        if not text:
+            await mystic.edit_text(f"» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ᴏɴ {app.mention}.")
+            
         return await mystic.edit_text(f"<b>» ʟɪsᴛ ᴏғ ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs :</b>\n\n{text}", disable_web_page_preview=True)
     #   await mystic.edit_text(f"𝗕𝗼𝘁 𝗔𝗰𝘁𝗶𝘃𝗲 𝗖𝗵𝗮𝘁𝘀 𝗜𝗻𝗳𝗼 • 🔊\n•━━━━━━━━━━━━━━━━━━•\n🎧 **ᴀᴜᴅɪᴏ** 🎧 » {len(served_chats)} Active\n•───────•\n🎥 **ᴠɪᴅᴇᴏ** 🎥 » {len(video_chats)} Active\n\n**Code Owner** > __Ayush__")
     if len(served_chats)==0:
         await mystic.edit_text(f"» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ᴏɴ {app.mention}.")
     else:
-        await mystic.edit_text(f"𝗕𝗼𝘁 𝗔𝗰𝘁𝗶𝘃𝗲 𝗖𝗵𝗮𝘁𝘀 𝗜𝗻𝗳𝗼 • 🔊\n•━━━━━━━━━━━━━━━━━━•\n🎧 **ᴀᴜᴅɪᴏ** 🎧 » {len(served_chats)} Active\n•───────•\n🎥 **ᴠɪᴅᴇᴏ** 🎥 » {len(video_chats)} Active\n\n**Code Owner** > __Ayush__")
+        await mystic.edit_text(f"𝗕𝗼𝘁 𝗔𝗰𝘁𝗶𝘃𝗲 𝗖𝗵𝗮𝘁𝘀 𝗜𝗻𝗳𝗼 • 🔊\n•━━━━━━━━━━━━━━━━━━•\n🎧 <b>ᴀᴜᴅɪᴏ</b>** 🎧 » {len(served_chats)} Active\n•───────•\n🎥 <b>ᴠɪᴅᴇᴏ</b> 🎥 » {len(video_chats)} Active\n\n<b>Code By</b> > __Ayush__")
 
 
 @app.on_message(filters.command(["activev", "activevideo"]) & SUDOERS)
