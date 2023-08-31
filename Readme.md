@@ -9,3 +9,8 @@
 
 <h3>CREDITS GOES TO:</h3>
 <p>Yukki(for base codes), AnonX(for upgrading), Ayush(for plugins upgrades)</p>
+
+<h1>Deploy Link For Linux!</h1>
+```console
+git clone https://github.com/JustAyu/Aest && cd Aest
+```
