@@ -35,7 +35,7 @@ async def activevc(_, message: Message):
                     j += 1
             except:
                 continue
-        if not text:
+        if len(served_chats)==0:
             await mystic.edit_text(f"» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ᴏɴ {app.mention}.")
             
         return await mystic.edit_text(f"<b>» ʟɪsᴛ ᴏғ ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs :</b>\n\n{text}", disable_web_page_preview=True)
