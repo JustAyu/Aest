@@ -32,7 +32,7 @@ async def activevc(_, message: Message):
                     text += f"<b>{j + 1}.</b> <a href=https://t.me/{user}>{unidecode(title).upper()}</a> [<code>{x}</code>]\n"
                 else:
                     text += (f"<b>{j + 1}.</b> {unidecode(title).upper()} [<code>{x}</code>]\n")
-                    j += 1
+                j += 1
             except:
                 continue
         if len(served_chats)==0:
