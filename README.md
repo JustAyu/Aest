@@ -10,6 +10,11 @@
 <h3>CREDITS GOES TO:</h3>
 <p>Yukki(for base codes), AnonX(for upgrading), Ayush(for plugins upgrades)</p>
 
+<h3>HEROKU USER?</h3>
+<a>http://dashboard.heroku.com/new?template=https://github.com/JustAyu/Aest</a>
+<p>I'm giving you link instead of button...So you can learn something</p>
+
+
 <h1>Deploy Link For Linux!</h1>
 <code>git clone https://github.com/JustAyu/Aest && cd Aest</code>
 
